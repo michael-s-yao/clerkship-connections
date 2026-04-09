@@ -108,23 +108,40 @@ function initGame() {
   generatePuzzle();
 }
 
+const MOBILE_MQ = window.matchMedia("(max-width: 640px)");
+
 function buildCategoryList() {
   const list = document.getElementById("categoryList");
   list.innerHTML = "";
-  categories.forEach(cat => {
-    const btn = document.createElement("button");
-    btn.className = "category-btn";
-    btn.textContent = cat;
-    btn.dataset.cat = cat;
-    btn.onclick = () => selectCategory(cat);
-    list.appendChild(btn);
-  });
+
+  if (MOBILE_MQ.matches) {
+    const sel = document.createElement("select");
+    sel.className = "category-select";
+    categories.forEach(cat => {
+      const opt = document.createElement("option");
+      opt.value = opt.textContent = cat;
+      sel.appendChild(opt);
+    });
+    sel.onchange = e => selectCategory(e.target.value);
+    list.appendChild(sel);
+  } else {
+    categories.forEach(cat => {
+      const btn = document.createElement("button");
+      btn.className = "category-btn";
+      btn.textContent = cat;
+      btn.dataset.cat = cat;
+      btn.onclick = () => selectCategory(cat);
+      list.appendChild(btn);
+    });
+  }
 }
 
 function activateCategoryButton(cat) {
   document.querySelectorAll(".category-btn").forEach(
     b => b.classList.toggle("active", b.dataset.cat === cat)
   );
+  const sel = document.querySelector(".category-select");
+  if (sel) sel.value = cat;
 }
 
 function selectCategory(cat) {

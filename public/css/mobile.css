@@ -32,25 +32,7 @@
   }
 
   .category-list {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    gap: 6px;
-    padding-bottom: 2px;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
-
-  .category-list::-webkit-scrollbar {
-    display: none;
-  }
-
-  .category-btn {
-    white-space: nowrap;
-    flex-shrink: 0;
-    padding: 6px 11px;
-    font-size: 0.76rem;
+    display: block;
   }
 
   .sidebar-actions {
