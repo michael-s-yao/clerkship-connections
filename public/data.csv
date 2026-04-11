@@ -96,7 +96,7 @@ internal medicine|family medicine,Infections requiring treatment of contacts,Nei
 neurology|emergency medicine,Contraindications to tPA,Presenting 12 hrs after symptom onset,BP 190/110,Recent surgery,Platelets < 100k
 neurology|emergency medicine,Hemorrhagic stroke management,Elevate head of bed,Transexamic acid,Reverse AC,Blood pressure management
 neurology|emergency medicine,Subarachnoid hemorrhage,Thunderclap headache,Xanthochromia on LP,Nimodipine treatment,Endovascular coiling
-neurology|emergency medicine,Cerebellar hemorrhage,ipsilateral ataxia + headache + NV + nystagmus,Urgent surgical decompression,SOC with NSg,Dysarthria and vertigo
+neurology|emergency medicine,Cerebellar hemorrhage,Ipsilateral ataxia and nystagmus,Urgent surgical decompression,SOC with NSg,Dysarthria and vertigo
 neurology,Lacunar stroke locations,Basal ganglia,Internal capsule,Corona radiata,Thalamus
 neurology|internal medicine,Possible stroke treatments,Aspirin,Statin,DOAC,BP control
 neurology|emergency medicine,Septic cavernous sinus thrombosis,Recent facial infection,Chemosis and high fever,Periorbital edema,CN III and VI palsy
@@ -181,7 +181,7 @@ surgery,Anal abscess,Perianal fluctuance,Enteric gram-negatives,Incision and dra
 surgery,Anal cancer,HPV association,HIV association,Squamous cell carcinoma,Nigro protocol
 surgery,Colonic adenocarcinoma (hemicolectomy),Hemicolectomy,CEA monitoring,FOLFOX therapy,Lynch syndrome
 surgery|internal medicine,Hepatic adenoma,Long-term OCP use,Risk of spontaneous rupture,No central scar,Surgical resection if >5 cm
-surgery|internal medicine,Pyogenic liver abscess,Infected biliary stent or stone,Rim-enhancing liver lesion with air-fluid level,CT-guided drainage,IV metronidazole + ceftriaxone
+surgery|internal medicine,Pyogenic liver abscess,Infected biliary stent or stone,Rim-enhancing liver lesion with air-fluid level,CT-guided drainage,IV metronidazole and ceftriaxone
 surgery,Hydatid cyst,Echinococcus granulosus,Eggshell calcifications and daughter cysts,Infected dogs or sheep,Pre-surgical albendazole
 surgery|emergency medicine,Rectus sheath hematoma,Epigastric vessels disruption,Carnett sign,Hyperattenuating mass within rectus sheath,Conservative management
 surgery|pediatrics,Meckel diverticulum,2% of population, 2 feet from ileocecal valve, 2 inches long,Painless GI bleeding in 2 yo
