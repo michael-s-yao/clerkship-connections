@@ -1,5 +1,5 @@
-const DEFAULT_CSV = "public/data.csv";
-const DEFAULT_IDX = "public/data_index.json";
+const DEFAULT_CSV = "/public/data.csv";
+const DEFAULT_IDX = "/public/data_index.json";
 const MAX_MISTAKES = 4;
 const PALETTE_HEX = ["#f9df6d", "#a0c35a", "#6aaFe6", "#ba81c5"];
 const PALETTE_TEXT = ["#3a2d00", "#ffffff", "#ffffff", "#ffffff"];
