@@ -1,102 +1,211 @@
 category,concept,element_1,element_2,element_3,element_4
-pediatrics,Components of Tetralogy of Fallot,Ventricular septal defect,Pulmonary stenosis,Overriding aorta,Right ventricular hypertrophy
-psychiatry,SSRIs (Selective Serotonin Reuptake Inhibitors),Fluoxetine,Sertraline,Escitalopram,Paroxetine
-internal medicine,ACE Inhibitors,Lisinopril,Enalapril,Captopril,Ramipril
-internal medicine,Drugs that Prolong the QT Interval,Amiodarone,Haloperidol,Methadone,Azithromycin
-internal medicine,Drugs that Cause Drug-Induced Lupus (HPIM),Hydralazine,Procainamide,Isoniazid,Minocycline
-internal medicine,Classic Findings of Cushing's Syndrome,Moon facies,Central obesity,Purple striae,Proximal muscle weakness
-emergency medicine,Classic Findings of Diabetic Ketoacidosis,Kussmaul breathing,Fruity breath odor,Polyuria,Hyperglycemia
-family medicine,Classic Symptoms of Hypothyroidism,Fatigue,Weight gain,Cold intolerance,Constipation
-internal medicine,First-Line Treatment for Active Tuberculosis (RIPE),Rifampin,Isoniazid,Pyrazinamide,Ethambutol
-internal medicine,Microvascular Complications of Diabetes Mellitus,Diabetic retinopathy,Diabetic nephropathy,Peripheral neuropathy,Autonomic neuropathy
-internal medicine,Major Complications of Liver Cirrhosis,Ascites,Hepatic encephalopathy,Esophageal varices,Hepatocellular carcinoma
-emergency medicine,Causes of Elevated Anion Gap Metabolic Acidosis (from MUDPILES),Diabetic ketoacidosis,Lactic acidosis,Uremia,Methanol poisoning
-internal medicine,CYP450 Enzyme Inducers (Decrease Drug Levels),Rifampin,Phenytoin,Carbamazepine,St. John's Wort
-internal medicine,CYP450 Enzyme Inhibitors (Increase Drug Levels),Fluconazole,Erythromycin,Amiodarone,Cimetidine
-internal medicine,Lab Findings in Iron Deficiency Anemia,Low ferritin,Low serum iron,Elevated TIBC,Microcytic red blood cells
-internal medicine,Lab Findings in Hemolytic Anemia,Elevated LDH,Elevated indirect bilirubin,Low haptoglobin,Reticulocytosis
-emergency medicine,Lab Findings in DIC (Disseminated Intravascular Coagulation),Thrombocytopenia,Elevated PT/INR,Elevated D-dimer,Low fibrinogen
-internal medicine,Common Causes of Hypercalcemia,Hyperparathyroidism,Malignancy,Sarcoidosis,Vitamin D toxicity
-internal medicine,Evidence-Based Treatments for HFrEF,ACE inhibitor (e.g. lisinopril),Beta-blocker (e.g. carvedilol),Aldosterone antagonist (spironolactone),SGLT2 inhibitor (e.g. dapagliflozin)
-internal medicine,Risk Factors for Deep Vein Thrombosis,Prolonged immobility,Active malignancy,Oral contraceptive use,Prior DVT history
-internal medicine,Classic Features of Nephrotic Syndrome,Proteinuria greater than 3.5g/day,Hypoalbuminemia,Peripheral edema,Hyperlipidemia
-internal medicine,Classic Features of Nephritic Syndrome,Hematuria with RBC casts,Hypertension,Azotemia (elevated creatinine/BUN),Oliguria
-internal medicine,Risk Factors for Hepatocellular Carcinoma,Hepatitis B infection,Hepatitis C infection,Liver cirrhosis (any cause),Dietary aflatoxin exposure
-psychiatry,Core Symptoms of a Manic Episode,Decreased need for sleep,Grandiosity,Pressured speech,Impulsive or reckless behavior
-psychiatry,Mood Stabilizers Used in Bipolar Disorder,Lithium,Valproate (valproic acid),Lamotrigine,Quetiapine
-internal medicine,Major Complications of Sickle Cell Disease,Vaso-occlusive pain crisis,Acute chest syndrome,Stroke,Splenic sequestration
-obgyn,Risk Factors for Ectopic Pregnancy,Prior pelvic inflammatory disease (PID),Previous ectopic pregnancy,Intrauterine device (IUD) use,Prior tubal surgery or ligation
-obgyn,The Four Ts of Postpartum Hemorrhage,Tone (uterine atony),Tissue (retained placenta),Trauma (genital tract lacerations),Thrombin (coagulopathy)
-psychiatry,Second-Generation (Atypical) Antipsychotics,Olanzapine,Quetiapine,Risperidone,Aripiprazole
-internal medicine,Drugs that Cause Gynecomastia,Spironolactone,Cimetidine,Ketoconazole,Digoxin
-internal medicine,Common Causes of Secondary Hypertension,Primary hyperaldosteronism (Conn's syndrome),Renal artery stenosis,Pheochromocytoma,Obstructive sleep apnea
-internal medicine,Nephrotoxic Medications,Aminoglycosides,NSAIDs,Intravenous iodinated contrast,Vancomycin
-internal medicine,Drugs Associated with Agranulocytosis,Clozapine,Methimazole,Carbamazepine,Propylthiouracil
-internal medicine,Classic Findings of Hemochromatosis (Bronze Diabetes),Bronze skin discoloration,Diabetes mellitus,Liver cirrhosis,Restrictive cardiomyopathy
-internal medicine,HLA-B27-Associated Seronegative Spondyloarthropathies,Ankylosing spondylitis,Reactive arthritis (formerly Reiter's),Psoriatic arthritis,IBD-associated arthropathy
-internal medicine,Classic Findings of Multiple Myeloma (CRAB Criteria),Hypercalcemia,Renal insufficiency,Anemia,Lytic bone lesions
-internal medicine,Classic Findings of Wilson's Disease,Kayser-Fleischer rings,Liver disease (cirrhosis or hepatitis),Neuropsychiatric symptoms (tremor/psychosis),Low serum ceruloplasmin
-neurology,Medications Used to Treat Parkinson's Disease,Levodopa/carbidopa,Pramipexole (dopamine agonist),Selegiline (MAO-B inhibitor),Amantadine
-internal medicine,Classic Lab Findings of SIADH,Hyponatremia,Low serum osmolality,High urine osmolality,Elevated urine sodium (>40 mEq/L)
-internal medicine,Common Organisms in Community-Acquired Pneumonia,Streptococcus pneumoniae,Mycoplasma pneumoniae,Haemophilus influenzae,Legionella pneumophila
-emergency medicine,Berlin Criteria for ARDS,Acute onset within 1 week of clinical insult,Bilateral infiltrates on chest X-ray,PaO2/FiO2 ratio below 300 mmHg,Not fully explained by cardiac failure or fluid overload
-internal medicine,Components of Metabolic Syndrome (need 3 of 5),Central obesity (elevated waist circumference),Hypertriglyceridemia (≥150 mg/dL),Low HDL cholesterol,Fasting hyperglycemia (≥100 mg/dL)
-emergency medicine,Pharmacologic Treatment of STEMI,Aspirin,P2Y12 inhibitor (clopidogrel or ticagrelor),Anticoagulation (unfractionated heparin),High-intensity statin
-obgyn,Risk Factors for Cervical Cancer,Human papillomavirus (HPV) infection,Multiple sexual partners,Immunosuppression (e.g. HIV),Cigarette smoking
-internal medicine,Major Side Effects of Long-Term Corticosteroid Use,Hyperglycemia,Osteoporosis,HPA axis suppression (adrenal insufficiency on withdrawal),Increased susceptibility to infection
-internal medicine,Loop Diuretics,Furosemide,Bumetanide,Torsemide,Ethacrynic acid
-internal medicine,Aminoglycosides (Nephrotoxic and Ototoxic),Gentamicin,Tobramycin,Amikacin,Streptomycin
-family medicine,Risk Factors for Barrett's Esophagus,Chronic GERD,Obesity,Male sex,Cigarette smoking
-internal medicine,Classic Triggers of Acute Gout Attacks,Alcohol consumption,High-purine diet (red meat or shellfish),Dehydration,Thiazide diuretic use
-obgyn,Teratogenic Medications (Pregnancy Category X),Isotretinoin,Valproic acid,Warfarin,Thalidomide
-internal medicine,Statins (HMG-CoA Reductase Inhibitors),Atorvastatin,Rosuvastatin,Simvastatin,Pravastatin
-internal medicine,Classic Signs of Right Heart Failure,Peripheral edema,Jugular venous distension,Hepatomegaly,Ascites
-internal medicine,Classic Findings of Addison's Disease (Primary Adrenal Insufficiency),Hyperpigmentation (skin and mucous membranes),Hyponatremia,Hyperkalemia,Orthostatic hypotension
-surgery,Common Causes of Small Bowel Obstruction,Adhesions (post-surgical),Incarcerated hernias,Malignancy,Volvulus
-surgery,Ranson's Criteria at Admission (Acute Pancreatitis Prognosis),Age greater than 55 years,WBC greater than 16000 cells/μL,Serum glucose greater than 200 mg/dL,Serum LDH greater than 350 IU/L
-internal medicine,Drugs Causing Photosensitivity,Tetracyclines,Fluoroquinolones,Amiodarone,Sulfonamides
-internal medicine,Causes of Macrocytic (Megaloblastic) Anemia,Vitamin B12 deficiency,Folate deficiency,Chronic alcoholism,Hydroxyurea
-emergency medicine,Stages of Alcohol Withdrawal by Timeline,Tremors and diaphoresis (6-24 hours),Alcoholic hallucinosis (12-24 hours),Generalized seizures (24-48 hours),Delirium tremens (48-72 hours)
-pediatrics,Core Vaccines Administered at the 2-Month Well-Child Visit,DTaP,Inactivated poliovirus (IPV),Haemophilus influenzae type b (Hib),Pneumococcal conjugate vaccine (PCV13)
-internal medicine,Proton Pump Inhibitors (PPIs),Omeprazole,Pantoprazole,Lansoprazole,Esomeprazole
-internal medicine,Bismuth Quadruple Therapy for H. pylori Eradication,Proton pump inhibitor,Bismuth subsalicylate,Metronidazole,Tetracycline
-family medicine,Classic Symptoms of Hyperthyroidism,Unintentional weight loss,Heat intolerance,Palpitations,Fine resting tremor
-internal medicine,Common Causes of Hyponatremia,SIADH,Congestive heart failure,Liver cirrhosis,Hypothyroidism
-internal medicine,Risk Factors for Peptic Ulcer Disease,H. pylori infection,NSAID or aspirin use,Cigarette smoking,Zollinger-Ellison syndrome (gastrinoma)
-internal medicine,Complications of Crohn's Disease,Fistula formation,Strictures and bowel obstruction,Intra-abdominal abscess,Malabsorption
-emergency medicine,Classic Signs of Tension Pneumothorax,Tracheal deviation away from affected side,Absent breath sounds on affected side,Hypotension,Elevated jugular venous pressure
-internal medicine,SIRS (Systemic Inflammatory Response Syndrome) Criteria,Temperature >38°C or <36°C,Heart rate >90 bpm,Respiratory rate >20/min,WBC >12000 or <4000 cells/μL (or >10% bands)
-internal medicine,Autoantibodies and Their Associated Rheumatologic Conditions,Anti-dsDNA (Systemic lupus erythematosus),Anti-histone (Drug-induced lupus),Anti-Scl-70 (Diffuse scleroderma),Anti-Jo-1 (Polymyositis/Dermatomyositis)
-internal medicine,Classic Findings of Rheumatoid Arthritis,Symmetric small joint involvement,Morning stiffness lasting >1 hour,Rheumatoid nodules,Ulnar deviation of fingers
-internal medicine,Classic Manifestations of SLE,Malar (butterfly) rash,Photosensitivity,Non-erosive arthritis,Serositis (pleuritis or pericarditis)
-internal medicine,Fluoroquinolones (Broad-Spectrum Antibiotics),Ciprofloxacin,Levofloxacin,Moxifloxacin,Ofloxacin
-pediatrics,Common Organisms Causing Neonatal Meningitis,Group B Streptococcus,Escherichia coli,Listeria monocytogenes,Klebsiella pneumoniae
-internal medicine,Manifestations of Tertiary Syphilis,Tabes dorsalis (dorsal column degeneration),Aortitis (aortic root aneurysm),Gummas (granulomatous lesions),Argyll Robertson pupils (accommodate but don't react)
-family medicine,Risk Factors for Osteoporosis,Postmenopausal state,Chronic corticosteroid use,Low calcium and vitamin D intake,Cigarette smoking
-internal medicine,Cardinal Signs of Inflammation (Celsus),Rubor (redness),Calor (heat),Tumor (swelling),Dolor (pain)
-internal medicine,Lab Findings in Acute Pancreatitis,Elevated serum lipase,Elevated serum amylase,Hypocalcemia,Leukocytosis
-internal medicine,Classic Findings of Marfan Syndrome,Tall stature with disproportionately long limbs,Arachnodactyly (long spider-like fingers),Ectopia lentis (lens subluxation superiorly),Aortic root dilation
-internal medicine,Anticoagulants Used in Clinical Practice,Unfractionated heparin,Low-molecular-weight heparin (enoxaparin),Warfarin,Direct oral anticoagulants (DOACs e.g. apixaban)
-internal medicine,Causes of Hyperkalemia,Acute kidney injury or CKD,Metabolic acidosis,Primary adrenal insufficiency (Addison's),ACE inhibitors or potassium-sparing diuretics
-internal medicine,Drugs Causing Hypokalemia,Furosemide (loop diuretic),Hydrochlorothiazide (thiazide diuretic),Amphotericin B,Corticosteroids
-internal medicine,Lab Abnormalities in Chronic Kidney Disease,Elevated serum creatinine and BUN,Hyperkalemia,Metabolic acidosis (low bicarb),Normocytic anemia (low EPO)
-obgyn,Classic Features of Preeclampsia,Hypertension (≥140/90 mmHg after 20 weeks),Proteinuria (≥300 mg/24 hours),Severe headache,Visual disturbances (scotomata or blurred vision)
-internal medicine,Drugs Used in Alcohol Use Disorder (Relapse Prevention or Detox),Naltrexone (reduces cravings),Acamprosate (reduces withdrawal discomfort),Disulfiram (aversion therapy),Benzodiazepines (acute withdrawal management)
-internal medicine,Third-Generation Cephalosporins,Ceftriaxone,Cefotaxime,Ceftazidime,Cefdinir
-neurology,Classic Triad Plus One: Wernicke's Encephalopathy Findings and Associated Deficiency,Confusion (encephalopathy),Ophthalmoplegia (extraocular movement paralysis),Ataxia,Thiamine (Vitamin B1) deficiency
-neurology,Classic Findings of Normal Pressure Hydrocephalus (Hakim's Triad + Cause),Gait disturbance (magnetic gait),Urinary incontinence,Dementia (cognitive decline),Communicating hydrocephalus on imaging
-surgery,Physical Exam Signs of Acute Peritonitis,Rebound tenderness,Involuntary guarding,Rigidity (board-like abdomen),Absent bowel sounds
-internal medicine,Medications That Cause Hypomagnesemia,Loop diuretics (furosemide),Proton pump inhibitors (chronic use),Amphotericin B,Aminoglycosides
-internal medicine,Characteristic Findings of Goodpasture Syndrome,Hemoptysis,Hematuria,Linear IgG deposits on glomerular basement membrane,Anti-GBM antibodies in serum
-internal medicine,MEN 1 Syndrome Components (3 Ps),Parathyroid hyperplasia (hypercalcemia),Pituitary adenomas (prolactinoma most common),Pancreatic endocrine tumors (gastrinoma/insulinoma),Autosomal dominant inheritance (MEN1 gene)
-internal medicine,MEN 2A Syndrome Components,Medullary thyroid carcinoma,Pheochromocytoma,Parathyroid hyperplasia (hypercalcemia),RET proto-oncogene mutation
-internal medicine,Causes of Painless Jaundice,Pancreatic head adenocarcinoma,Cholangiocarcinoma,Primary sclerosing cholangitis,Ampullary carcinoma
-pediatrics,Classic Features of Kawasaki Disease (CRASH criteria),Conjunctival injection (bilateral non-exudative),Rash (polymorphous),Adenopathy (cervical lymphadenopathy >1.5 cm),Strawberry tongue and oral changes
-pediatrics,Signs of Pyloric Stenosis,Projectile non-bilious vomiting,Palpable olive-shaped epigastric mass,Hypochloremic hypokalemic metabolic alkalosis,Age 2-8 weeks (male predominance)
-internal medicine,Causes of Exudative Pleural Effusion (Light's Criteria Context),Bacterial pneumonia (parapneumonic effusion),Malignancy (lung/breast/lymphoma),Pulmonary embolism,Tuberculosis
-internal medicine,Classic Features of Reactive (Secondary) Polycythemia vs Primary,Elevated hematocrit,Elevated erythropoietin level (in secondary),Normal or low EPO in polycythemia vera (primary),Causes include chronic hypoxia and EPO-secreting tumors
-internal medicine,First-Generation Antipsychotics (Typical) with High Extrapyramidal Risk,Haloperidol,Fluphenazine,Trifluoperazine,Perphenazine
-psychiatry,Extrapyramidal Side Effects of Antipsychotics,Acute dystonia,Akathisia (motor restlessness),Parkinsonism (bradykinesia/rigidity),Tardive dyskinesia (late-onset involuntary movements)
-internal medicine,Drugs That Cause Peripheral Neuropathy,Isoniazid,Metronidazole,Vincristine,Paclitaxel
-internal medicine,Complications of Untreated Celiac Disease,Iron deficiency anemia,Osteoporosis,Dermatitis herpetiformis,Increased risk of intestinal T-cell lymphoma
-internal medicine,Chronic Lymphocytic Leukemia (CLL),Smudge Cells,Lymphadenopathy,Indolent Presentation,Autoimmune Hemolysis
+emergency medicine|internal medicine,STEMI management,Nitroglycerin,PCI,Tenecteplase,DAPT
+emergency medicine,Pulseless VT ACLS meds,Vasopressin 40 U,Epinephrine 1 mg IV,Amiodarone 300 mg,Lidocaine 1 mg/kg
+emergency medicine|internal medicine,Hypertensive emergency meds,Nicardipine,Nitroprusside,Labetalol,Clevidipine
+emergency medicine|neurology,Contraindications to tPA,Prior ICH,Prior stroke within past 3 months,Active bleeding,Intracranial neoplasm
+emergency medicine|internal medicine,Status asthmaticus meds,Albuterol,Iptratropium,Methylprednisolone,Magnesium sulfate
+emergency medicine|pediatrics,Epiglottitis,Dysphagia,Hot potato voice,Drooling,Tripod positioning
+emergency medicine,Acetaminophen overdose treatment,Liver transplant,Rumack-Matthew nomogram,N-acetylcysteine,Activated charcoal
+emergency medicine,Organophosphate poisoning management,Decontamination,Hemodialysis,Atropine,Pralidoxime
+emergency medicine|internal medicine,Serotonin syndrome,MAOIs,Linezolid,Tramadol,Sumatriptan
+internal medicine,Tumor lysis syndrome,Hyperuricemia,Cairo-Bishop criteria,Hyperphosphatemia,Hypocalcemia
+emergency medicine,Acute angle-closure glaucoma treatment,Timolol,Pilocarpine,Acetazolamide,Laser iridotomy
+pediatrics,Pediatric GI findings,Target sign on US,Olive shaped mass,Whirlpool sign,Double bubble
+pediatrics|emergency medicine,Croup,Parainfluenza,Steeple sign,Nebulized racemic epi,Barking cough
+pediatrics|emergency medicine,Signs of nonaccidental trauma,Bilateral retinal hemorrhages,Metaphyseal corner fractures,Posterior rib fractures,Unexplained bruising
+emergency medicine|surgery,Components of MTP,pRBC,FFP,Platelets,Calcium gluconate
+internal medicine|psychiatry,Alcohol withdrawal stages,Tremors and diaphoresis,Hallucinosis,Generalized seizures,Delirium tremens
+internal medicine|emergency medicine,Diabetic ketoacidosis,Kussmaul breathing,Fruity breath,Polyuria,Hyperglycemia
+internal medicine|emergency medicine,Anion gap metabolic acidosis causes,Lactic acidosis,Iron overdose,Ethylene glycol,Uremia
+internal medicine,DIC lab findings,Thrombocytopenia,Low fibrinogen,Elevated D-dimer,Coagulopathy
+internal medicine|emergency medicine,ARDS Berlin criteria,Acute onset,Bilateral CXR infiltrates,PaO2/FiO2 < 300 mmHg,Not explained by cardiac problem
+internal medicine|emergency medicine,Acute right heart failure findings,New RBBB,S1Q3T3 on EKG,McConnell's sign,Elevated JVP
+internal medicine|family medicine,Secondary causes of HTN,OSA,Primary aldosteronism,Pheochromocytoma,Recreational drug use
+internal medicine|family medicine,Lipid lowering meds,Rosuvastatin,Ezetimibe,PCSK9 inhibitors,Niacin
+internal medicine|family medicine,Diabetes mellitus management,Eye exam,Foot exam,HbA1c,Lipid panel
+internal medicine,Hyperthyroidism treatment,Propranolol,Methimazole,Propylthiouracil,Radioactive iodine
+internal medicine|family medicine,Indications for pneumococcal vaccine,Asplenia,HIV,Hodgkin lymphoma,Nephrotic syndrome
+internal medicine|family medicine,Gout triggers,Shellfish,Alcohol,Red meat,High fructose corn syrup
+internal medicine|family medicine,COPD meds,Tiotropium,Home O2 therapy,Salmeterol,Budesonide
+psychiatry|pediatrics|family medicine,ADHD meds,Atomoxetine,Guanfacine,Clonidine,Concerta or Vyvanse
+family medicine|internal medicine,Smoking cessation management,Nicotine patch,Varenicline,Bupropion,Cessation program referral
+psychiatry|internal medicine|family medicine,Alcohol use disorder management,CAGE questionnaire,CIWA Score,Motivational interviewing,Acamprosate
+pediatrics|family medicine,Acute otitis pathogens,Strep pneumo,H influenzae,Moraxella catarrhalis,Pseudomonas
+family medicine|internal medicine,Low back pain red flag symptoms,Bowel dysfunction,Urinary incontinence,Saddle anesthesia,Pain at night
+family medicine,Acne vulgaris treamtn,Topical retinoid,Oral doxycycline,Hormonal therapy,Oral isotretinoin
+pediatrics|family medicine,Enuresis treatment,Bed-wetting alarm,Nocturnal fluid restriction,Desmopressin,Imipramine
+internal medicine,HFrEF GDMT,Entresto,Metoprolol,Jardiance,Spironolactone
+internal medicine,Vitamin A deficiency,Bitot spots,Night blindness,Follicular hyperkeratosis,Xerophthalmia
+internal medicine,Vitamin B12 deficiency causes,Anti-intrinsic factor Ab,Chronic PPI use,Gastric bypass,Metformin
+internal medicine,Folate deficiency causes,Sulfasalazine,Trimethoprim,Phenytoin,Methotrexate
+internal medicine,Pellagra (B3 deficiency),Dementia,Diarrhea,Casal necklace,Photosensitive dematitis
+internal medicine|family medicine,Iron deficiency anemia,Low TIBC,High RDW,Low ferritin,Low MCV
+internal medicine,Barrett's esophagus risk factors,Chronic GERD,Male sex,Obesity,Cigarette smoking
+internal medicine|family medicine,Hypothyroidism symptoms,Fatigue,Weight gain,Cold intolerance,Constipation
+internal medicine|family medicine,Hyperthyroidism symptoms,Palpitations,Weight loss,Heat intolerance,Resting tremor
+internal medicine|family medicine,Osteoporosis risk factors,Post menopause,Chronic steroid use,Low calcium,Low vitamin D
+internal medicine|family medicine,ACE inhibitors,Lisinopril,Enalapril,Captopril,Ramipril
+internal medicine,QTc prolonging drugs,Amiodarone,Haloperidol,Methadone,Azithromycin
+internal medicine,Drug-Induced Lupus causes,Hydralazine,Procainamide,Isoniazid,Minocycline
+internal medicine,Cushing's syndrome findings,Moon facies,Central obesity,Purple striae,Proximal muscle weakness
+internal medicine,RIPE treatment for active Tuberculosis,Rifampin,Isoniazid,Pyrazinamide,Ethambutol
+internal medicine|family medicine,Microvascular Complications of Diabetes Mellitus,Retinopathy,Nephropathy,Peripheral neuropathy,Autonomic neuropathy
+internal medicine|family medicine,CYP450 inducers,Rifampin,Phenytoin,Carbamazepine,St. John's wort
+internal medicine|family medicine,CYP450 inhibitors,Fluconazole,Erythromycin,Amiodarone,Cimetidine
+internal medicine,Hemolytic anemia findings,Elevated LDH,Elevated indirect bilirubin,Low haptoglobin,Reticulocytosis
+internal medicine,Hypercalcemia causes,Hyperparathyroidism,Malignancy,Sarcoidosis,Vitamin D toxicity
+internal medicine|pediatrics,Major Complications of Sickle Cell Disease,Vaso-occlusive episodes,Acute chest syndrome,Ischemic stroke,Splenic sequestration
+internal medicine,Drugs that cause gynecomastia,Spironolactone,Cimetidine,Ketoconazole,Digoxin
+internal medicine,Drugs associated with agranulocytosis,Clozapine,Methimazole,Carbamazepine,Propylthiouracil
+internal medicine,Multiple myeloma findings,Hypercalcemia,Renal insufficiency,Anemia,Lytic bone lesions
+internal medicine,Seronegative arthropathies,Ankylosing spondylitis,Reactive arthritis,Psoriatic arthritis,IBD-associated arthropathy
+internal medicine,Wilson's disease findings,Kayser-Fleischer rings,Liver disease,Tremors and psychosis,Low serum ceruloplasmin
+internal medicine|family medicine,Community-acquired pneumonia organisms,Streptococcus pneumoniae,Mycoplasma pneumoniae,Haemophilus influenzae,Legionella pneumophila
+internal medicine,Loop diuretics,Furosemide,Bumetanide,Torsemide,Ethacrynic acid
+internal medicine,Aminoglycosides,Gentamicin,Tobramycin,Amikacin,Streptomycin
+internal medicine,Peptic ulcer disease risk factors,H. pylori infection,NSAID or aspirin use,Cigarette smoking,Zollinger-Ellison syndrome
+internal medicine|surgery,Painless jaundice causes,Pancreatic head adenocarcinoma,Cholangiocarcinoma,Primary sclerosing cholangitis,Ampullary carcinoma
+internal medicine|neurology,Peripheral neuropathy causes,Isoniazid,Metronidazole,Vincristine,Paclitaxel
+internal medicine,Chronic lymphocytic leukemia,Smudge cells,Lymphadenopathy,Indolent presentation,Autoimmune hemolysis
+internal medicine|emergency medicine,AFib with RVR management,Metoprolol,Diltiazem,Amiodarone,Cardioversion
+internal medicine,Types of AV block,P-QRS dissociation,"Fixed PR, random QRS drop",Progressive PR prolongation,Constant PR prolongation
+internal medicine|emergency medicine,Post-MI complications,Papillary muscle rupture,Free wall rupture,Dressler syndrome,LV aneurysm
+internal medicine|emergency medicine,Cardiac tamponade exam,Beck's triad,Pulsus paradoxus,RV diastolic collapse,Distant heart sounds
+internal medicine,Infective endocarditis,Duke criteria,Janeway lesions,Osler nodes,Roth spots
+surgery|internal medicine,Leriche syndrome,Aortoiliac occlusion,Bilateral claudication,Absent femoral pulses,Erectile dysfunction
+emergency medicine,Types of shock,Anaphylaxis,Massive internal bleeding,Saddle PE,Neurogenic
+internal medicine,Nasopharyngeal carcinoma,EBV association,Immigrant from Southern China,Nasal obstruction,Unilateral otitis media
+internal medicine,Causes of drug-induced liver injury,Isoniazid,Statins,Augmentin,Bactrim
+internal medicine,Alcoholic hepatitis,AST:ALT ratio > 2,Elevated alk phos and GGT,Maddrey's discriminant function,Treat with abstinence
+internal medicine,Possible cirrhosis meds,Furosemide,Spironolactone,Lactulose,Rifaximin
+internal medicine|surgery,Focal nodular hyperplasia,Central stellate scar,Not OCP-related,No malignant potential,Spoke-wheel pattern
+internal medicine,Primary sclerosing cholangitis,Beads on string,Associated with UC,p-ANCA positive,Treat with liver transplant
+internal medicine|surgery|emergency medicine,Pancreatitis,Hypertriglyceridemia,Pancreatic calcifications,Balthazar score,Low fecal elastase
+internal medicine,Paroxysmal nocturnal hemoglobinuria (PNH),PIGA mutation,Intravascular hemolysis,Absent CD55/CD59,Treatment with eculizumab
+internal medicine,Causes of thrombocytopenia,Antiplatelet IgG Ab,ADAMTS13 deficiency,PF4-heparin antibodies,Consumption of clotting factors and platelets
+internal medicine,APLS antibodies,Lupus anticoagulant,Anti-cardiolipin,Anti-beta2 glycoprotein,ANA
+internal medicine|surgery,DVT prophylaxis inpatient,Heparin,Lovenox,Fondaparinux,Bivalirudin
+internal medicine,Causes of severe ESR elevation,Infection,Malignancy,Polymyalgia rheumatica,Giant cell arteritis
+internal medicine,Tumor lysis syndrome,Hyperuricemia,Hyperphosphatemia,Hyperkalemia,Hyper-LDH
+internal medicine,Transfusion reactions,Febrile non-hemolytic,AHTR,TRALI,Delayed hemolytic
+internal medicine,Polyarteritis nodosa,Medium-vessel necrotizing vasculitis,Hepatitis B association,String of pearls on angiography,Mononeuritis multiplex
+internal medicine,Opportunistic HIV infections (CD4 < 100),HHV-8,JC virus,Cryptococcus neoformans,Mycobacterium avium complex
+internal medicine,Chagas disease,Trypanosoma cruzi,Romana's sign,Cardiomyopathy,Megaesophagus
+internal medicine,DRESS syndrome causes,Bactrim,Allopurinol,Carbamezapine,Lamotrigene
+internal medicine|family medicine,Infections requiring treatment of contacts,Neisseria meningitidis,Pertussis,Scabies,Trichomonas vaginalis
+neurology|emergency medicine,Contraindications to tPA,Presenting 12 hrs after symptom onset,BP 190/110,Recent surgery,Platelets < 100k
+neurology|emergency medicine,Hemorrhagic stroke management,Elevate head of bed,Transexamic acid,Reverse AC,Blood pressure management
+neurology|emergency medicine,Subarachnoid hemorrhage,Thunderclap headache,Xanthochromia on LP,Nimodipine treatment,Endovascular coiling
+neurology|emergency medicine,Cerebellar hemorrhage,ipsilateral ataxia + headache + NV + nystagmus,Urgent surgical decompression,SOC with NSg,Dysarthria and vertigo
+neurology,Lacunar stroke locations,Basal ganglia,Internal capsule,Corona radiata,Thalamus
+neurology|internal medicine,Possible stroke treatments,Aspirin,Statin,DOAC,BP control
+neurology|emergency medicine,Septic cavernous sinus thrombosis,Recent facial infection,Chemosis and high fever,Periorbital edema,CN III and VI palsy
+neurology,Normal pressure hydrocephalus,Urinary incontinence,Therapeutic LP,Wide-based gait,Cognitive dysfunction
+neurology,Alzheimer disease meds,Donepezil,Rivastigmine,Galantamine,Memantine
+neurology,Dementia with Lewy bodies,Fluctuating cognition,Memory relatively preserved,Visual hallucinations,Antipsychotic sensitivity
+neurology,Frontotemporal dementia,Personality changes,Executive dysfunction,Tau or TDP-43 inclusions,Inappropriate behavior
+neurology,Creutzfeldt-Jakob disease,Rapidly progressive dementia,14-3-3 protein in CSF; MRI shows cortical ribboning and basal ganglia T2 hyperintensity,Cortical ribboning,Myoclonus and ataxia
+neurology|psychiatry,Wernicke encephalopathy / Korsakoff syndrome,AMS,Thiamine deficiency,Ophthalmoplegia,Ataxic gait
+psychiatry|neurology,Extrapyrimadal side effects,Acute dystonia,Akathisia,Parkinsonism,Tardive dyskinesia
+neurology,Essential tremor,Strong genetic component,Worsens with intentional movement,Improves with primidone,Improves with alcohol
+neurology,Huntington disease,Chorea,Caudate nucleus,Trinucleotide repeat,Anticipation
+neurology|psychiatry,REM sleep behavior disorder,Narcolepsy,Antidepressant use,Parkinson disease,Lewy body dementia
+neurology,Narcolepsy,Cataplexy,Low hypocretin levels,Shortened REM latency,Treat with modafinil
+neurology|pediatrics,Absence seizure,3 Hz spike-and-wave,Brief staring spells,Treat with ethosuximide,Triggered by hyperventilation
+neurology|pediatrics,West syndrome,Patient < 1 yo,Hypsarrhythmia on EEG,ACTH Treatment,Vigabitran
+neurology|family medicine,Migraine meds,Sumitraptan,Ubrogepant,Zolmitriptan,Ergotamine
+neurology,Idiopathic intracranial hypertension,Young obese women,Vitamin A,Elevated LP opening pressure,Acetazolamide
+neurology,Guillain-Barre syndrome,Ascending flaccid paralysis,Albuminocytologic dissociation,Campylobacter association,Treat with IVIG
+neurology|pediatrics,Neurofibromatosis type 1,Axillary freckling,Cafe-au-lait macules,Lisch nodules,Annual eye exam
+neurology|pediatrics,Rett syndrome,X-linked MECP2 mutation,Developmental regression,Breathing irregularities,Stereotyped hand wringing
+neurology|pediatrics,Tuberous sclerosis,Shagreen patches,Ash-leaf spots,Cardiac rhabdomyoma,Renal angiomyolipomas
+neurology|pediatrics,Sturge-Weber syndrome,Somatic GNAQ mutation,Unilateral port-wine stain,Tram-track calcifications on CT,Ipsilateral glaucoma
+neurology,Meniere disease,Unilateral sensorineural hearing loss,Episodic vertigo,Tinnitus,Aural fullness
+neurology,Parinaud syndrome,Upward gaze palsy,Collier sign,Convergence-retraction nystagmus,Light-near dissociation
+obgyn,Normal pregnancy changes,Increased GFR,Dilutional normocytic anemia,WBC elevated,Increased protein excretion
+obgyn,Quad screen,AFP,Estriol,Inhibin A,hCG
+obgyn,Gestational diabetes complications,Neonatal hypoglycemia,Fetal macrosomia,Shoulder dystocia,Respiratory distress syndrome
+obgyn,Pruritis causes during pregnancy,PUPPP,Cholestasis of pregnancy,Atopic eruption,Skin stretching
+obgyn|emergency medicine,Causes of painless bleeding during pregnancy,Threatened abortion,Placenta previa,Vasa previa,Cervical polyps
+obgyn,PPROM exam findings,Oligohydramnios on US,Vaginal pooling of fluid,Positive nitrazine test,Positive ferning test
+obgyn,Polyhydramnios causes,GI atresia,Maternal diabetes,Fetal anemia,Maternal parvovirus
+obgyn,Oligohydramnios cases,PPROM,Renal agenesis,Post-term pregnancy,IUGR
+obgyn|internal medicine,Extragenital GCCT infections,Lymphogranuloma venerum,Conjuncitivitis,Pharyngitis,Purulent tenosynovitis
+internal medicine,Manifestations of syphilis,Gummas,Painless chancre,Hutchinson teeth,Saber shins
+obgyn,US components of BPP,Fetal breathing,Fetal movement,Fetal tone,Amniotic fluid
+pediatrics|obgyn,Causes of neonatal hearing loss,CMV,Rubella,Toxoplasmosis,HSV
+obgyn|pediatrics,Sequelae of maternal infections,High output heart failure,Intracranial calcifications,Neonatal cataracts,Microcephaly
+obgyn|emergency medicine,Causes of postpartum hemorrhage,Uterine atony,Retained products,Genital tract trauma,Coagulopathy
+obgyn|pediatrics,Turner syndrome findings,Short stature,Webbed neck,Wide chest,Streak ovaries
+surgery|obgyn,Breast masses requiring intervention,Phyllodes tumor,Invasive ductal carcinoma,Infiltrating lobular carcinoma,Inflammatory breast carcinoma
+obgyn,Secondary causes of amenorrhea,Primary ovarian insufficiency,Turner syndrome,Kallmann syndrome,Functional hypothalamic amenorrhea
+obgyn|family medicine,Contraindications to OCPs,Prior DVT/PE,Active smoking in age > 35 yo,Uncontrolled HTN,Migraine with aura
+obgyn,Risk factors for cervical cancer,HPV infection,Multiple sexual partners,Immunosupression,Cigarette smoking
+obgyn,Teratogenic medications,Isotretinoin,Depakote,Warfarin,Thalidomide
+obgyn|emergency medicine,Risk factors for ectopic pregnancy,PID,Prior ectopic pregnancy,IUD,Prior tubal surgery
+pediatrics,Neonatal tachypnea etiologies,Meconium aspiration,Respiratory distress syndrome,Transient tachypnea of the newborn,Diaphragmatic hernia
+pediatrics,Causes of neonatal hyperbili,Lactation failure,Hemolytic disease,High RBC turnover,High beta glucuronidase
+obgyn|pediatrics,Complications from delivery,Klumpke palsy,Erb palsy,Cephalohematoma,Subgaleal hemorrhage
+pediatrics,Manifestations of VACTERL association,Tracheo-esophageal fistula,Anal atresia,Malformed vertebrae,Atrial septal defect
+pediatrics,Down syndrome complications,Hirshsprung disease,Congenital heart defects,Duodenal atresia,Intestinal malrotation
+pediatrics,Normal findings in 12 mo,Object permanence,Pulls to stand,Separation anxiety,Pincer grasp
+pediatrics|internal medicine,X-linked disorders,Bruton's agammaglobulinemia,Hemophilia A,Duchenne muscular dystrophy,Lesch-Nyhan syndrome
+pediatrics,PDA-dependent lesions,Pulmonary atresia,Hypoplastic left heart,Tricuspid atresia,Transposition of the great vessels
+pediatrics,Associated with iron deficiency,Breath holding spells,Lead poisoning,Microcytic anemia,Eating ice or dirt
+pediatrics,Causes of rectal bleeding,Food protein-induced proctocolitis,Intussusception,Meckel diverticulum,Vitamin K deficiency
+pediatrics|obgyn,Sexual development disorders,Congenital adrenal hyperplasia,Androgen insensitivity syndrome,5-alpha reductase deficiency,Turner syndrome
+pediatrics|family medicine,NSAID-responsive MSK conditions,Transient synovitis of the hip,Leg-Calve-Perthes disease,Osteoid osteoma,Osgood-Schlatter disease
+pediatrics,Potter sequence,Pulmonary hypoplasia,Flat facial features,Low-set ears,Recessed chin
+pediatrics|family medicine,Vaccines at 2-mo visit,DTaP,Inactivated poliovirus,H. flu type B,Pneumococcal (PCV 13)
+pediatrics,Causes of neonatal meningitis,Group B Strep,E coli,Listeria monocytogenes,Klebsiella pneumoniae
+pediatrics,DiGeorge syndrome,T-cell deficiency,Hypo-PTH,Truncus arteriosus,Cleft palate
+pediatrics,Chediak-Higashi syndrome,Easy bleeding,Peripheral neuropathy,Albinism,Frequent infections
+psychiatry,Symptoms of manic episode,Decreased need for sleep,Grandiosity,Pressured speech,Impulsive behavior
+psychiatry|family medicine,SSRIs,Fluoxetine,Sertraline,Escitalopram,Paroxetine
+psychiatry,BPD mood stabilizeers,Lithium,Depakote,Lamotrigene,Quetiapine
+psychiatry|emergency medicine,Indications for benzos,Alcohol withdrawal,Catatonia,Seizures,Delium tremens
+psychiatry|family medicine,Major depressive disorder,Decreased REM sleep latency,Hyperactive HPA axis,Elevated cortisol levels,SIGECAPS
+psychiatry|internal medicine,Lithium toxicity,New-onset tremor,Hypothyroidism,Diabetes insipidus,Fasciculations
+psychiatry,Depakote side effects,Thrombocytopenia,Elevated LFTs,Pancreatitis,Neural tube defects
+psychiatry,Protective factors against suicide,Religious belief,Social support,Children at home,Sense of belonging
+psychiatry,ECT indications,SI with imminent risk,Severe psychosis,Medication resistant MDD,Catatonia with anorexia
+surgery|emergency medicine,Appendicitis,McBurney point tenderness,Rovsing sign,CT A/P,Obturator sign
+surgery,SBO,High-pitched bowel sounds,Intestinal adhesions,Air-fluid levels,NG tube decompression
+surgery,Sigmoid volvulus,Neurologically impaired patients,Coffee-bean sign on CXR,Sigmoidoscopy,High recurrence rate
+surgery,Cecal volvulus,Younger adult patients,Whirl sign,Ectopic cecum,Right hemicolectomy
+surgery,Ogilvie syndrome,No anatomic obstruction,Cecal dilitation,IV neostigmine,Colonoscopic decompression
+surgery|emergency medicine,Diverticulitis,LLQ pain,CT A/P with contrast,IV antibiotics +/- drainage,Colovesical fistula complication
+surgery|emergency medicine,Acute cholecystitis,Murphy sign,Gallbladder wall thickening,Lap chole,Post-op bile duct injury
+surgery,Internal hemorrhoids,Painless rectal bleeding,Above the dentate line,Sitz baths,Stool softeners
+surgery,Anal abscess,Perianal fluctuance,Enteric gram-negatives,Incision and drainage,Fistula-in-ano complication
+surgery,Anal cancer,HPV association,HIV association,Squamous cell carcinoma,Nigro protocol
+surgery,Colonic adenocarcinoma (hemicolectomy),Hemicolectomy,CEA monitoring,FOLFOX therapy,Lynch syndrome
+surgery|internal medicine,Hepatic adenoma,Long-term OCP use,Risk of spontaneous rupture,No central scar,Surgical resection if >5 cm
+surgery|internal medicine,Pyogenic liver abscess,Infected biliary stent or stone,Rim-enhancing liver lesion with air-fluid level,CT-guided drainage,IV metronidazole + ceftriaxone
+surgery,Hydatid cyst,Echinococcus granulosus,Eggshell calcifications and daughter cysts,Infected dogs or sheep,Pre-surgical albendazole
+surgery|emergency medicine,Rectus sheath hematoma,Epigastric vessels disruption,Carnett sign,Hyperattenuating mass within rectus sheath,Conservative management
+surgery|pediatrics,Meckel diverticulum,2% of population, 2 feet from ileocecal valve, 2 inches long,Painless GI bleeding in 2 yo
+surgery,Testicular torsion,Absent cremasteric reflex,Absent Doppler flow,Bell clapper deformity,Bilateral orchidopexy
+surgery|emergency medicine,Aortic dissection,Stanford type A or B,Chest pain radiating to the back,CT angio or TEE,Marfan syndrome
+surgery|emergency medicine,Aortic transection,Rapid deceleration injury,Widened mediastinum, Left hemothorax,NG tube deviation
+surgery|emergency medicine,Acute limb ischemia,Poikilothermia, Pallor,Paralysis,Pulselessness
+surgery|neurology,Carotid stenosis,Carotid endarterectomy,Duplex ultrasound,Amaurosis fugax,Statin therapy
+surgery,Peripheral artery disease (revascularization),ABI < 0.9,Claudication,Smoking cessation,Supervised exercise program
+surgery|internal medicine,Chronic venous insufficiency,Incompetent venous valves,Varicose veins, Leg edema, Lipodermatosclerosis
+internal medicine|surgery,DVT (IVC filter indications),IVC filter vs DOAC,D-dimer,DOAC,Wells' criteria
+surgery,Femoral artery pseudoaneurysm,Post cardiac cath,Systolic bruit,US-guided thrombin injection,Doppler US
+surgery|internal medicine,Thromboangiitis obliterans,Young male heavy smokers,Distal limb ischemia,Small- and medium- vessel vasculitis,Smoking cessation
+surgery|emergency medicine,Pneumothorax,Apical bleb rupture,Tracheal deviation,Supplemental O2,Chest tube placement
+surgery|emergency medicine,Esophageal perforation,Subcutaneous emphysema,Gastrografin esophagram,Left pleural effusion,Hydropneumothorax
+surgery|internal medicine,Mesothelioma,Chronic asbestos exposure,Asymmetric pleural thickening,Shipyard work,Talc pleurodesis
+surgery,Anterior mediastinal masses,Thymoma,Teratoma,Lymphoma,Thyroid goiter
+surgery,Femoral neck fracture,Elderly women with osteoporosis,Garden classification,Hemiarthroplasty or ORIF,Fat embolism syndrome
+surgery|pediatrics,SCFE (surgical pinning),Obese adolescents,Acute hip pain,Frog-leg lateral X-ray,Drehmann sign
+surgery|family medicine,Carpal tunnel,Thenar atrophy,Phalen test,Tinel tests,Wrist splinting
+surgery|internal medicine,Prostate cancer,PSA,Gleason score,Radical prostatectomy,Radiation therapy
+surgery|obgyn,Intraductal papilloma,Unilateral bloody nipple discharge,Small subareolar mass,Ductogram or breast MRI,Microdochectomy
+surgery|internal medicine,MEN 2A and/or 2B,Thyroid cancer,Pheochromocytoma,Parathyroid hyperplasia,Mucosal neuromas
+surgery,Wound VAC contraindications,Malignancy,Necrotic tissue,Untreated osteomyelitis,Exposed organs
+surgery|internal medicine,Ranson's criteria,Age > 55 yo,WBC > 16k,LDH > 350,Glucose > 200
+surgery|emergency medicine,Acute peritonitis,Rebound tenderness,Involuntary guarding,Abdominal rigidity,Absent bowel sounds
+surgery,Causes of SBO,Adhesions,GI malignancy,Volvulus,Incarcerated hernias

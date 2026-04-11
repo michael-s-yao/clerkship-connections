@@ -1,3 +1,13 @@
+const DEFAULT_CSV = "public/data.csv";
+const DEFAULT_IDX = "public/data_index.json";
+const MAX_MISTAKES = 4;
+const PALETTE_HEX = ["#f9df6d", "#a0c35a", "#6aaFe6", "#ba81c5"];
+const PALETTE_TEXT = ["#3a2d00", "#ffffff", "#ffffff", "#ffffff"];
+const MOBILE_MQ = window.matchMedia("(max-width: 640px)");
+
+let dataIndex = null;
+let catKey = "category";
+let categoryCache = {};
 let allRows = [];
 let categories = [];
 let selectedCategory = "";
@@ -7,10 +17,6 @@ let selected = new Set();
 let solved = [];
 let mistakes = 0;
 let gameOver = false;
-const MAX_MISTAKES = 4;
-const PALETTE_HEX = ["#f9df6d", "#a0c35a", "#6aaFe6", "#ba81c5"];
-const PALETTE_TEXT = ['#3a2d00', "#ffffff", "#ffffff", "#ffffff"];
-const DEFAULT_CSV = "public/data.csv";
 
 function parseCSVLine(line) {
   const cols = [];
@@ -25,8 +31,7 @@ function parseCSVLine(line) {
         inQ = !inQ;
       }
     } else if (ch === "," && !inQ) {
-      cols.push(cur.trim());
-      cur = "";
+      cols.push(cur.trim()); cur = "";
     } else {
       cur += ch;
     }
@@ -37,14 +42,13 @@ function parseCSVLine(line) {
 
 function parseCSV(text) {
   const lines = text
-    .replace(/\r\n/g, '\n')
-    .replace(/\r/g, '\n')
-    .split('\n')
-    .filter(l => l.trim());
+    .replace(/\r\n/g, "\n")
+    .replace(/\r/g, "\n")
+    .split("\n").filter(l => l.trim());
   if (lines.length < 2)
     throw new Error("CSV has no data rows.");
   const headers = parseCSVLine(lines[0]).map(
-    h => h.toLowerCase().replace(/^"|"$/g, '')
+    h => h.toLowerCase().replace(/^"|"$/g, "")
   );
   const rows = [];
   for (let i = 1; i < lines.length; i++) {
@@ -52,23 +56,19 @@ function parseCSV(text) {
     if (vals.length < 5)
       continue;
     const row = {};
-    headers.forEach((h, idx) => { row[h] = vals[idx] || ''; });
+    headers.forEach((h, idx) => { row[h] = vals[idx] || ""; });
     rows.push(row);
   }
   return rows;
 }
 
-async function loadCSVText(text) {
-  const rows = parseCSV(text);
-  if (!rows.length)
-    throw new Error("No valid rows found.");
-  const sample = rows[0];
-  const catKey = "category" in sample ? "category"
-               : "subject_category" in sample ? "subject_category"
-               : Object.keys(sample)[0];
-  allRows = rows
+function normalizeRows(csvRows) {
+  return csvRows
     .map(r => ({
-      category: (r[catKey] || "").trim(),
+      categories: (r[catKey] || "")
+        .split("|")
+        .map(c => c.trim())
+        .filter(Boolean),
       concept: (r["concept"] || "").trim(),
       elements: [
         r["element_1"] || "",
@@ -77,22 +77,55 @@ async function loadCSVText(text) {
         r["element_4"] || ""
       ].map(s => s.trim()),
     }))
-    .filter(r => r.category && r.concept && r.elements.every(e => e));
-  categories = [...new Set(allRows.map(r => r.category))].sort();
-  if (!categories.length)
-    throw new Error("No valid categories found.");
+    .filter(r => r.categories.length && r.concept && r.elements.every(e => e));
 }
 
-async function fetchAndLoad(url) {
-  const resp = await fetch(url);
+async function loadIndex() {
+  const resp = await fetch(DEFAULT_IDX);
   if (!resp.ok)
-    throw new Error(`HTTP ${resp.status} — ${resp.statusText}`);
-  await loadCSVText(await resp.text());
+    throw new Error(`Could not load index: HTTP ${resp.status}`);
+  dataIndex = await resp.json();
+  catKey = dataIndex.catKey || "category";
+  categories = Object.keys(dataIndex.categories).sort();
+}
+
+async function loadCategoryRows(cat) {
+  if (categoryCache[cat]) {
+    allRows = categoryCache[cat];
+    return;
+  }
+
+  const ranges = dataIndex.categories[cat];
+  if (!ranges)
+    throw new Error(`Unknown category: ${cat}`);
+
+  const texts = await Promise.all(
+    ranges.map(range =>
+      fetch(DEFAULT_CSV, {
+        headers: { Range: `bytes=${range.start}-${range.end}` },
+      }).then(resp => {
+        if (!resp.ok && resp.status !== 206) {
+          throw new Error(`CSV range fetch failed: HTTP ${resp.status}`);
+        }
+        return resp.text();
+      })
+    )
+  );
+
+  const rows = normalizeRows(
+    parseCSV(dataIndex.header + "\n" + texts.join("\n"))
+  );
+  categoryCache[cat] = rows;
+  allRows = rows;
 }
 
 (async function autoLoad() {
-  await fetchAndLoad(DEFAULT_CSV);
-  initGame();
+  try {
+    await loadIndex();
+    initGame();
+  } catch (e) {
+    console.error(e);
+  }
 })();
 
 function initGame() {
@@ -100,15 +133,14 @@ function initGame() {
   loadDarkMode();
   document.getElementById("app").style.display = "flex";
   buildCategoryList();
-  const savedCategory = (getCookie("cc_category") || "").replaceAll("_", " ");
-  selectedCategory = (savedCategory && categories.includes(savedCategory))
-    ? savedCategory
-    : categories[0];
-  activateCategoryButton(selectedCategory);
-  generatePuzzle();
-}
 
-const MOBILE_MQ = window.matchMedia("(max-width: 640px)");
+  const saved = (getCookie("cc_category") || "").replaceAll("_", " ");
+  selectedCategory = (saved && categories.includes(saved))
+    ? saved : categories[0];
+  activateCategoryButton(selectedCategory);
+
+  loadCategoryRows(selectedCategory).then(() => generatePuzzle());
+}
 
 function buildCategoryList() {
   const list = document.getElementById("categoryList");
@@ -128,8 +160,7 @@ function buildCategoryList() {
     categories.forEach(cat => {
       const btn = document.createElement("button");
       btn.className = "category-btn";
-      btn.textContent = cat;
-      btn.dataset.cat = cat;
+      btn.textContent = btn.dataset.cat = cat;
       btn.onclick = () => selectCategory(cat);
       list.appendChild(btn);
     });
@@ -148,7 +179,7 @@ function selectCategory(cat) {
   selectedCategory = cat;
   setCookie("cc_category", cat.replaceAll(" ", "_"), 365);
   activateCategoryButton(cat);
-  generatePuzzle();
+  loadCategoryRows(cat).then(() => generatePuzzle());
 }
 
 function shuffle() {
@@ -164,13 +195,33 @@ function generatePuzzle() {
   document.getElementById("resultOverlay").style.display = "none";
   updateMistakeDots();
 
-  const pool = allRows.filter(r => r.category === selectedCategory);
+  const pool = allRows.filter(r => r.categories.includes(selectedCategory));
   if (pool.length < 4) {
     document.getElementById("grid").innerHTML = "";
     return;
   }
 
-  const picks = sampleN(pool, 4);
+  let picks;
+  const MAX_SAMPLE_ATTEMPTS = 50;
+  for (let attempt = 0; attempt < MAX_SAMPLE_ATTEMPTS; attempt++) {
+    picks = sampleN(pool, 4);
+    const seen = new Set();
+    let clash = false;
+    for (const row of picks) {
+      for (const el of row.elements) {
+        if (seen.has(el)) {
+          clash = true;
+          break;
+        }
+        seen.add(el);
+      }
+      if (clash)
+        break;
+    }
+    if (!clash)
+      break;
+  }
+
   const colorOrder = shuffleArray([0, 1, 2, 3]);
   puzzle = picks.map((row, i) => ({
     concept: row.concept,
@@ -180,8 +231,8 @@ function generatePuzzle() {
 
   const allTiles = [];
   puzzle.forEach((p, conceptIdx) => {
-    p.elements.forEach(
-      text => allTiles.push({ text, conceptIdx, id: uniqueId() })
+    p.elements.forEach(text =>
+      allTiles.push({ text, conceptIdx, id: uniqueId() })
     );
   });
   tiles = shuffleArray(allTiles);
@@ -211,13 +262,11 @@ function addSolvedRow(conceptIdx) {
   row.className = "solved-row";
   row.style.background = PALETTE_HEX[p.colorIdx];
   row.style.color = PALETTE_TEXT[p.colorIdx];
-  row.style.height = `
-    ${document.getElementsByClassName("tile")[0].offsetHeight}px
-  `;
+  row.style.height = `${document.getElementsByClassName("tile")[0].offsetHeight}px`;
   row.innerHTML = `
     <div>
-    <div class="concept-name">${escapeHTML(p.concept)}</div>
-    <div class="elements-list">${p.elements.map(escapeHTML).join(" · ")}</div>
+      <div class="concept-name">${escapeHTML(p.concept)}</div>
+      <div class="elements-list">${p.elements.map(escapeHTML).join(" · ")}</div>
     </div>
   `;
   document.getElementById("solvedRows").appendChild(row);
