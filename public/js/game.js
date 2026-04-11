@@ -102,7 +102,10 @@ async function loadCategoryRows(cat) {
   const texts = await Promise.all(
     ranges.map(range =>
       fetch(DEFAULT_CSV, {
-        headers: { Range: `bytes=${range.start}-${range.end}` },
+        headers: {
+          Range: `bytes=${range.start}-${range.end}`,
+          "Accept-Encoding": "identity",
+        },
       }).then(resp => {
         if (!resp.ok && resp.status !== 206) {
           throw new Error(`CSV range fetch failed: HTTP ${resp.status}`);
