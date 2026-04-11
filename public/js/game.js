@@ -8,6 +8,7 @@ const MOBILE_MQ = window.matchMedia("(max-width: 640px)");
 let dataIndex = null;
 let catKey = "category";
 let categoryCache = {};
+let csvText = null;
 let allRows = [];
 let categories = [];
 let selectedCategory = "";
@@ -95,31 +96,22 @@ async function loadCategoryRows(cat) {
     return;
   }
 
-  const ranges = dataIndex.categories[cat];
-  if (!ranges)
-    throw new Error(`Unknown category: ${cat}`);
+  if (!csvText) {
+    const resp = await fetch(DEFAULT_CSV);
+    if (!resp.ok)
+      throw new Error(`CSV fetch failed: HTTP ${resp.status}`);
+    csvText = await resp.text();
+  }
 
-  const texts = await Promise.all(
-    ranges.map(range =>
-      fetch(DEFAULT_CSV, {
-        headers: {
-          Range: `bytes=${range.start}-${range.end}`,
-          "Accept-Encoding": "identity",
-        },
-      }).then(resp => {
-        if (!resp.ok && resp.status !== 206) {
-          throw new Error(`CSV range fetch failed: HTTP ${resp.status}`);
-        }
-        return resp.text();
-      })
-    )
-  );
+  const allParsed = normalizeRows(parseCSV(csvText));
+  allParsed.forEach(row => {
+    row.categories.forEach(c => {
+      if (!categoryCache[c]) categoryCache[c] = [];
+      categoryCache[c].push(row);
+    });
+  });
 
-  const rows = normalizeRows(
-    parseCSV(dataIndex.header + "\n" + texts.join("\n"))
-  );
-  categoryCache[cat] = rows;
-  allRows = rows;
+  allRows = categoryCache[cat] || [];
 }
 
 (async function autoLoad() {
