@@ -104,7 +104,7 @@ neurology,Normal pressure hydrocephalus,Urinary incontinence,Therapeutic LP,Wide
 neurology,Alzheimer disease meds,Donepezil,Rivastigmine,Galantamine,Memantine
 neurology,Dementia with Lewy bodies,Fluctuating cognition,Memory relatively preserved,Visual hallucinations,Antipsychotic sensitivity
 neurology,Frontotemporal dementia,Personality changes,Executive dysfunction,Tau or TDP-43 inclusions,Inappropriate behavior
-neurology,Creutzfeldt-Jakob disease,Rapidly progressive dementia,14-3-3 protein in CSF; MRI shows cortical ribboning and basal ganglia T2 hyperintensity,Cortical ribboning,Myoclonus and ataxia
+neurology,Creutzfeldt-Jakob disease,Rapidly progressive dementia,14-3-3 protein in CSF,Cortical ribboning,Myoclonus and ataxia
 neurology|psychiatry,Wernicke encephalopathy / Korsakoff syndrome,AMS,Thiamine deficiency,Ophthalmoplegia,Ataxic gait
 psychiatry|neurology,Extrapyrimadal side effects,Acute dystonia,Akathisia,Parkinsonism,Tardive dyskinesia
 neurology,Essential tremor,Strong genetic component,Worsens with intentional movement,Improves with primidone,Improves with alcohol
