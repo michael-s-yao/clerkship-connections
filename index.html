@@ -8,7 +8,12 @@
     <link rel="stylesheet" type="text/css" href="public/css/menu.css">
     <link rel="stylesheet" type="text/css" href="public/css/game.css">
     <link rel="stylesheet" type="text/css" href="public/css/mobile.css">
-    <meta name="theme-color" content="#f1f1f1;">
+    <link rel="stylesheet" type="text/css" href="public/css/print.css">
+    <meta name="theme-color" content="#1a1a2e">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4GGV3P3RE"></script>
     <script>
@@ -39,8 +44,9 @@
           </div>
         </div>
         <div class="result-actions">
-          <button class="btn" onclick="shuffle()">New Puzzle</button>
-          <button class="btn primary" onclick="closeResult()">See Board</button>
+          <button class="btn" onclick="sharePuzzle()" id="sharePuzzleBtn">share this puzzle</button>
+          <button class="btn" onclick="shuffle()">new puzzle</button>
+          <button class="btn primary" onclick="closeResult()">see board</button>
         </div>
       </div>
     </div>
@@ -132,8 +138,10 @@
     <script type="text/javascript" src="public/js/cookies.js"></script>
     <script type="text/javascript" src="public/js/stats.js"></script>
     <script type="text/javascript" src="public/js/color.js"></script>
+    <script type="text/javascript" src="public/js/uuid.js"></script>
     <script type="text/javascript" src="public/js/game.js"></script>
     <script type="text/javascript" src="public/js/helper.js"></script>
+    <script type="text/javascript" src="public/js/print.js"></script>
     <script type="text/javascript">
       document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>

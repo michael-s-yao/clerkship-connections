@@ -69,4 +69,41 @@ function escapeHTML(s) {
     .replace(/"/g, "&quot;");
 }
 
+function sharePuzzle() {
+  const uuid = puzzleToUUID(selectedCategory, puzzle.map(p => p.concept));
+  const url = new URL(location.href);
+  url.searchParams.set("uuid", uuid);
+
+  const btn = document.getElementById("sharePuzzleBtn");
+
+  const onCopied = () => {
+    const prev = btn.textContent;
+    btn.textContent = "link copied!";
+    setTimeout(() => { btn.textContent = prev; }, 2000);
+  };
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url.toString()).then(onCopied).catch(() => {
+      _fallbackCopy(url.toString(), onCopied);
+    });
+  } else {
+    _fallbackCopy(url.toString(), onCopied);
+  }
+}
+
+function _fallbackCopy(text, onSuccess) {
+  const el = document.createElement("textarea");
+  el.value = text;
+  el.style.cssText = "position:fixed;opacity:0;pointer-events:none";
+  document.body.appendChild(el);
+  el.select();
+  try {
+    document.execCommand("copy");
+    onSuccess();
+  } catch {
+    prompt("Copy this link to share the puzzle:", text);
+  }
+  document.body.removeChild(el);
+}
+
 loadDarkMode();

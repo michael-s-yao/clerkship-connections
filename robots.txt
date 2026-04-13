@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /public/data.csv
+Disallow: /public/data_index.json
+Disallow: /public/uuid_index.json

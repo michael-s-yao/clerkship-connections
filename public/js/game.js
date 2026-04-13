@@ -1,5 +1,6 @@
 const DEFAULT_CSV = "/public/data.csv";
 const DEFAULT_IDX = "/public/data_index.json";
+const DEFAULT_UUID_IDX = "/public/uuid_index.json";
 const MAX_MISTAKES = 4;
 const PALETTE_HEX = ["#f9df6d", "#a0c35a", "#6aaFe6", "#ba81c5"];
 const PALETTE_TEXT = ["#3a2d00", "#ffffff", "#ffffff", "#ffffff"];
@@ -10,6 +11,7 @@ let catKey = "category";
 let categoryCache = {};
 let csvText = null;
 let allRows = [];
+let allParsedRows = [];
 let categories = [];
 let selectedCategory = "";
 let puzzle = [];
@@ -82,12 +84,18 @@ function normalizeRows(csvRows) {
 }
 
 async function loadIndex() {
-  const resp = await fetch(DEFAULT_IDX);
-  if (!resp.ok)
-    throw new Error(`Could not load index: HTTP ${resp.status}`);
-  dataIndex = await resp.json();
+  const [idxResp, uuidResp] = await Promise.all([
+    fetch(DEFAULT_IDX),
+    fetch(DEFAULT_UUID_IDX),
+  ]);
+  if (!idxResp.ok)
+    throw new Error(`Could not load index: HTTP ${idxResp.status}`);
+  if (!uuidResp.ok)
+    throw new Error(`Could not load UUID index: HTTP ${uuidResp.status}`);
+  dataIndex = await idxResp.json();
   catKey = dataIndex.catKey || "category";
   categories = Object.keys(dataIndex.categories).sort();
+  initUUIDIndex(await uuidResp.json());
 }
 
 async function loadCategoryRows(cat) {
@@ -104,6 +112,7 @@ async function loadCategoryRows(cat) {
   }
 
   const allParsed = normalizeRows(parseCSV(csvText));
+  allParsedRows = allParsed;
   allParsed.forEach(row => {
     row.categories.forEach(c => {
       if (!categoryCache[c]) categoryCache[c] = [];
@@ -129,11 +138,29 @@ function initGame() {
   document.getElementById("app").style.display = "flex";
   buildCategoryList();
 
+  const uuidParam = new URLSearchParams(location.search).get("uuid");
+  if (uuidParam) {
+    loadCategoryRows(categories[0]).then(() => {
+      const match = lookupByUUID(uuidParam, allParsedRows);
+      if (match) {
+        selectedCategory = match.category;
+        activateCategoryButton(selectedCategory);
+        allRows = categoryCache[selectedCategory] || [];
+        generatePuzzle(match.rows);
+      } else {
+        fallbackToDefaultPuzzle();
+      }
+    }).catch(() => fallbackToDefaultPuzzle());
+  } else {
+    fallbackToDefaultPuzzle();
+  }
+}
+
+function fallbackToDefaultPuzzle() {
   const saved = (getCookie("cc_category") || "").replaceAll("_", " ");
   selectedCategory = (saved && categories.includes(saved))
     ? saved : categories[0];
   activateCategoryButton(selectedCategory);
-
   loadCategoryRows(selectedCategory).then(() => generatePuzzle());
 }
 
@@ -181,7 +208,7 @@ function shuffle() {
   generatePuzzle();
 }
 
-function generatePuzzle() {
+function generatePuzzle(specificRows) {
   selected.clear();
   solved = [];
   mistakes = 0;
@@ -190,31 +217,41 @@ function generatePuzzle() {
   document.getElementById("resultOverlay").style.display = "none";
   updateMistakeDots();
 
-  const pool = allRows.filter(r => r.categories.includes(selectedCategory));
+  if (!specificRows) {
+    const url = new URL(location.href);
+    url.searchParams.delete("uuid");
+    history.replaceState(null, "", url);
+  }
+
+  const pool = specificRows || allRows.filter(r => r.categories.includes(selectedCategory));
   if (pool.length < 4) {
     document.getElementById("grid").innerHTML = "";
     return;
   }
 
   let picks;
-  const MAX_SAMPLE_ATTEMPTS = 50;
-  for (let attempt = 0; attempt < MAX_SAMPLE_ATTEMPTS; attempt++) {
-    picks = sampleN(pool, 4);
-    const seen = new Set();
-    let clash = false;
-    for (const row of picks) {
-      for (const el of row.elements) {
-        if (seen.has(el)) {
-          clash = true;
-          break;
+  if (specificRows) {
+    picks = specificRows;
+  } else {
+    const MAX_SAMPLE_ATTEMPTS = 50;
+    for (let attempt = 0; attempt < MAX_SAMPLE_ATTEMPTS; attempt++) {
+      picks = sampleN(pool, 4);
+      const seen = new Set();
+      let clash = false;
+      for (const row of picks) {
+        for (const el of row.elements) {
+          if (seen.has(el)) {
+            clash = true;
+            break;
+          }
+          seen.add(el);
         }
-        seen.add(el);
+        if (clash)
+          break;
       }
-      if (clash)
+      if (!clash)
         break;
     }
-    if (!clash)
-      break;
   }
 
   const colorOrder = shuffleArray([0, 1, 2, 3]);
